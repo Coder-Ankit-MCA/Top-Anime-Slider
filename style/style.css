@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(29, 29, 29);
+}
+.container {
+    position: relative;
+    width: 60%;
+    height: 40rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 400%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: 25s sliding infinite;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+}
+ .slide img {
+    width: 100%;
+    height: 100%;
+ }
+
+ .slide .caption {
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+    background: rgba(0, 0, 0, 0.348);
+    backdrop-filter: blur(6px);
+    padding: 1rem 5rem;
+    border-radius: 0 2rem 2rem 0;
+    cursor: pointer;
+ }
+.dbz {
+    color: yellow;
+    font-weight: 600;
+    text-shadow: -2px -2px 0 black,
+                 2px -2px 0 black,
+                 -2px 2px 0 black,
+                 2px 2px 0 black;
+}
+.dragon {
+    color: yellow;
+}
+.ball {
+    color:brown;
+}
+.naruto {
+    color: chocolate;
+    font-weight: 600;
+    text-shadow: -1px -1px 0 white,
+                 1px -1px 0 white,
+                 -1px 1px 0 white,
+                 1px 1px 0 white;
+}
+.aot {
+    font-weight: 600;
+    text-shadow: -1px -1px 0 rgb(244, 104, 54),
+                 1px -1px 0 rgb(244, 104, 54),
+                 -1px 1px 0 rgb(244, 104, 54),
+                 1px 1px 0 rgb(244, 104, 54);
+}
+.bc {
+    font-weight: 600;
+    color: black;
+    text-shadow: -1px -1px 0 white,
+                 1px -1px 0 white,
+                 -1px 1px 0 white,
+                 1px 1px 0 white;
+}
+.opm {
+    font-weight: 600;
+    color: red;
+    text-shadow: -1px -1px 0 white,
+                 1px -1px 0 white,
+                 -1px 1px 0 white,
+                 1px 1px 0 white;
+}
+
+
+.caption p {
+    font-size: 1rem;
+    cursor: default;
+}
+
+.slide.one {
+    background: rgb(182, 19, 109);
+}
+.slide.two {
+    background: rgb(255, 64, 64);
+}
+.slide.three {
+    background: rgb(11, 173, 188);
+}
+.slide.four {
+    background: rgb(11, 188, 14);
+}
+.slide.five {
+    background: rgb(173, 11, 188);
+}
+
+@keyframes sliding {
+    0% {
+        transform: translateX(0%);
+    }
+    10% {
+        transform: translateX(0%);
+    }
+    15% {
+        transform: translateX(-100%);
+    }
+    35% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-200%);
+    }
+    65% {
+        transform: translateX(-300%);
+    }
+    85% {
+        transform: translateX(-300%);
+    }
+    90% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+@media (max-width: 1231px) {
+    .container {
+        height: auto;
+        width: 100%;
+    }
+    .summary {
+        height: 7rem;
+        width: 100%;
+        font-size: 5rem;
+    }
+    .detalis {
+        height: auto;
+        width: 100%;
+        font-size: 1rem;
+    }
+}

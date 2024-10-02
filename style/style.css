@@ -13,6 +13,17 @@ body {
     align-items: center;
     background: rgb(29, 29, 29);
 }
+h1{
+    color: white;                  /* Set the color of the text */
+    font-size: 3rem;               /* Adjust the font size */
+    text-align: center; 
+    justify-content: center;           /* Center the text */
+    position: absolute;            /* Absolute positioning */
+    top: 20px;                     /* Distance from the top of the screen */
+    left: 30%;                     /* Horizontally center the element */
+       /* Adjust for the horizontal centering */
+    
+}
 .container {
     position: relative;
     width: 60%;
@@ -21,6 +32,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
+    margin-top: 10%;
 }
 
 .slider {
@@ -173,5 +185,60 @@ body {
         height: auto;
         width: 100%;
         font-size: 1rem;
+    }
+    .dbz {
+        font-size: 25px;
+    }
+    .naruto {
+        font-size: 25px;
+    }
+    .aot {
+        font-size: 20px;
+    }
+    .bc {
+        font-size: 25px;
+    }
+    .opm {
+        font-size: 20px;
+    }
+    .a {
+        font-size: 30px;
+        left: 0%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        height: 78%;
+        width: 100%;
+    }
+    .summary {
+        height: 7rem;
+        width: 100%;
+        font-size: 5rem;
+    }
+    .detalis {
+        height: auto;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .dbz {
+        font-size: 25px;
+    }
+    .naruto {
+        font-size: 25px;
+    }
+    .aot {
+        font-size: 20px;
+    }
+    .bc {
+        font-size: 25px;
+    }
+    .opm {
+        font-size: 20px;
+    }
+    .a {
+        font-size: 28px;
+        left: 0%;
     }
 }
